@@ -1,8 +1,12 @@
 import random
-ans = random.randint(1, 100)
+start = input('Start from:')
+end = input('End to:')
+start = int(start)
+end = int(end)
+ans = random.randint(start, end)
 t = 0
 while True:
-	g = input('Please guess a number from 1 to 100:')
+	g = input('Please guess a number:')
 	g = int(g)
 	t = t + 1
 	if g == ans:
